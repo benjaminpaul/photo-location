@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "photo-location",
+    "owner": "benpaul1984",
     "slug": "photo-location",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -16,6 +17,16 @@
     },
     "assetBundlePatterns": [
       "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
     ],
     "ios": {
       "supportsTablet": true
